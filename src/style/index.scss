@@ -95,13 +95,6 @@ $Gray_2_Paragraph: #676F8F;
     margin: 2rem;
 }
 
-    .girl {
-        width: 320px;
-        height: 250px;
-        margin-top: 35px;
-        margin-left: 163px;
-    }
-
 .input-form {
     height: 4em;
     width: 300px;
@@ -228,24 +221,13 @@ $Gray_2_Paragraph: #676F8F;
         align-self: end;
         justify-content: end;
     }
- 
-    .footer {
-        color: $Gray_3;
-        font-size: 12px;
-        /* margin-top: 50px; */
-        /* margin-bottom: 50px; */
-        text-align: center;
-        font-family: 'Roboto', sans-serif;
-    }
 
 .mobile-login{
     font-size: 14px;
      color: #6769FF; 
      margin: 0rem 1rem 1rem 1rem 
 }
-.viewMobileOcult{
-    display:none
-}
+
 .span{
     font-weight: 600;
     text-decoration: underline;
@@ -259,60 +241,6 @@ $Gray_2_Paragraph: #676F8F;
 
 .MuiFormHelperText-contained{
  margin-right: 0px !important;
-}
-
-.nuevoFont{
-    color: $Gray_1_Títulos;
-    font-size: 12px; 
-    font-weight: bold;
-}
-.seguroFont{
-    color: $Gray_1_Títulos;
-    font-size: 28px;
-    font-weight: 900; 
-    line-height: 34px;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    white-space: pre;
-    margin: 0px;
-}
-.textRed{
-    color: $Red_1_Rimac;
-    font-size: 28px;
-    font-weight: 900;
-    line-height: 20px;
-    margin: 8px 0px 0px 0px;
-}
-.cuentanosFont{
-    color: $Gray_2_Paragraph;
-    max-width: 271px;
-    font-size: 14px;
-    line-height: 24px;
-    margin-top: 22px;
-    font-family: 'Roboto', sans-serif;
-}
-
-.viewDesktop__lateral{
-    margin-left: 8rem; 
-    margin-right: 2rem; 
-    height: 38vh;
-    width: 374px; 
-    padding-top: 20px;
-    padding-left: 44px;
-}
-.div_p_viewDesktop{
-    display: flex; 
-    align-items: center; 
-    height: 30px; 
-    margin: 0px;
-    padding: 0px 
-}
-.seguroDesktopfont{
-    color: $Gray_1_Títulos; 
-    font-size: 28px;
-    font-weight: 900; 
-    line-height: 1px;
-    margin-right: 15px
 }
 
 .fontPhone{
@@ -347,22 +275,9 @@ $Gray_2_Paragraph: #676F8F;
     color: $Red_1_Rimac;
 }
 
-@media screen and (min-width: 1650px) {
-    .divImgGirl {
-        height:40vh;
-        width: 100%; 
-        display: flex;
-        justify-content: center
-    }
-}
+
 
 @media screen and (max-width: 767px) {
-    .loginDesktop {
-        display: none;
-     }
-     .footer{
-         display: none;
-     }
      .imagenPhone {
         display: grid;
         grid-template-columns: repeat(2, 0fr);
@@ -372,14 +287,7 @@ $Gray_2_Paragraph: #676F8F;
         grid-template-columns: 1fr ;
         grid-template-rows: 40vh 60vh;
     }
-        .viewMobileOcult {
-            background-color: #F7F8FC;
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-        }
-   .viewMobileOcult--ImageGirl{
-    justify-self: end;
-   }
+       
        .phoneDesktop{
            display: none;
         }  
@@ -424,16 +332,8 @@ $Gray_2_Paragraph: #676F8F;
         background: #FFFFFF;
     }
     
-    .nuevoFont{
-        font-size: 10px; 
-        font-weight: bold;
-        margin: 20px 0px 10px 0px;
-    }
     .logo{
         padding-left: 20px;
-    }
-    .text-mobile{
-        padding-left: 35px;
     }
 
     .div-terms{
