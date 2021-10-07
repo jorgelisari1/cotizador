@@ -3,7 +3,7 @@ import React from 'react';
 import girlMobile from '../../assets/img/mobile-girl.png';
 import girl from '../../assets/img/girl-desktop.png';
 
-import '../../style/sectionMessage.scss';
+import '../../styles/sectionMessage.scss';
 
 export const SectionMessage =()=>{
     return<div>

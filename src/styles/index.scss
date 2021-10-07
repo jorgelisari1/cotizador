@@ -88,6 +88,9 @@ $Gray_2_Paragraph: #676F8F;
     height: 20px;
     width: 20px;
 }
+.phone2 {
+    display: none;
+}
 
 .logo-home {
     height: 2.5em;
@@ -209,7 +212,6 @@ $Gray_2_Paragraph: #676F8F;
 }
 
     .imagenPhone{
-        margin-top: 1rem; 
         display: none
     }
     .phoneDesktop {
@@ -346,5 +348,10 @@ $Gray_2_Paragraph: #676F8F;
     .btn-login {
         width: 300px; 
     }
-    
+    .phone2 {
+        display: block;
+        margin-left: 1rem;
+        height: 20px;
+        width: 20px;
+    }
 }

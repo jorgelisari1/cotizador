@@ -1,0 +1,170 @@
+$White : #FFFFFF;
+$Gray_3 : #A3ABCC;
+$Gray_1_Títulos : #494F66;
+$Gray_5 : #E4E8F7;
+$Acian_2_Hover : #6F7DFF;
+$Gray_2_Paragraph : #676F8F;
+
+.body{
+  font-family: 'Lato', sans-serif;
+}
+
+.card {
+  background-color: #FFFFFF;
+  border-radius: 12px;
+  display: grid;
+  width: 384px;
+  grid-template-columns: 60% 40%;
+  padding: 0px 20px 0px 20px;
+  height: 172px;
+  border: 3px solid #F0F2FA;
+  box-sizing: border-box;
+  border-radius: 12px;
+  margin-top: 51px;
+  margin-left: 38px;
+}
+.imgeBoy{
+    justify-self: end;
+}
+.textCard{
+  font-family: 'Roboto', sans-serif;
+  display: grid;
+  height: 122px;
+  padding-top: 50px;
+}
+.text-placa{
+  font-size: 12px;
+  color: $Gray_3; 
+}
+.text-car{
+  font-size: 16px;
+  color: $Gray_1_Títulos;
+}
+
+.imageBoy{
+  height: 195px;
+  padding-left: 50px;
+  padding-bottom: 44px;
+}
+.cardCovertura{
+  display: grid;
+  grid-template-columns: 20% 60% 20% ;
+  padding-top: 20px;
+ 
+}
+.vermas{
+  display: grid;
+  grid-template-columns: 20% 80% ;
+  padding-top: 10px ;
+  padding-bottom: 20px;
+  border-bottom: 1px solid $Gray_5;
+}
+.text-name-covertura{
+  font-family: 'Lato', sans-serif;
+  color: $Gray_1_Títulos;
+  font-size: 16px;
+  font-weight: bold;
+  padding-right: 30px;
+}
+.text-vermas-close{
+  color: $Acian_2_Hover;
+  font-weight: bold;
+  font-size: 10px;
+  display: grid;
+  grid-template-columns: 20% 10%;
+  align-items: center;
+}
+.text-vermas-open{
+  color: $Gray_3;
+  font-weight: bold;
+  font-size: 10px;
+  display: grid;
+  grid-template-columns: 27% 10%;
+  align-items: center;
+}
+.text-vermas-desc{
+  color: $Gray_2_Paragraph;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+ 
+}
+@media screen and (max-width: 767px) {
+
+  .card{
+    background-color: $White;
+    border-radius: 12px;
+    display: grid;
+    width: 300px;
+    grid-template-columns: 60% 40%;
+    padding: 0px 20px 0px 20px;
+    height: 150px;
+  }
+  .imgeBoy{
+      justify-self: end;
+  }
+  .textCard{
+    font-family: 'Roboto', sans-serif;
+    display: grid;
+    height: 122px;
+    padding-top: 50px;
+  }
+  .text-placa{
+    font-size: 12px;
+    color: $Gray_3; 
+  }
+  .text-car{
+    font-size: 16px;
+    color: $Gray_1_Títulos;
+  }
+
+  .imageBoy{
+    height: 195px;
+    padding-left: 50px;
+    padding-bottom: 44px;
+  }
+  .cardCovertura{
+    display: grid;
+    grid-template-columns: 20% 60% 20% ;
+    padding-top: 20px;
+   
+  }
+  .vermas{
+    display: grid;
+    grid-template-columns: 20% 80% ;
+    padding-top: 10px ;
+    padding-bottom: 20px;
+    border-bottom: 1px solid $Gray_5;
+  }
+  .text-name-covertura{
+    font-family: 'Lato', sans-serif;
+    color: $Gray_1_Títulos;
+    font-size: 16px;
+    font-weight: bold;
+    padding-right: 30px;
+  }
+  .text-vermas-close{
+    color: $Acian_2_Hover;
+    font-weight: bold;
+    font-size: 10px;
+    display: grid;
+    grid-template-columns: 20% 10%;
+    align-items: center;
+  }
+  .text-vermas-open{
+    color: $Gray_3;
+    font-weight: bold;
+    font-size: 10px;
+    display: grid;
+    grid-template-columns: 27% 10%;
+    align-items: center;
+  }
+  .text-vermas-desc{
+    color: $Gray_2_Paragraph;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+   
+  }
+}
+

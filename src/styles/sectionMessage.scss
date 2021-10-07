@@ -93,6 +93,7 @@ $Gray_2_Paragraph: #676F8F;
         background-color: #F7F8FC;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+        height: 220px;
     }
     .text-mobile{
         padding-left: 35px;
@@ -106,6 +107,7 @@ $Gray_2_Paragraph: #676F8F;
 
     .viewMobileOcult--ImageGirl{
         justify-self: end;
+        position: absolute;
     }
 
     .loginDesktop {

@@ -1,0 +1,97 @@
+$Gray_2_Paragraph : #676F8F;
+$Gray_1_Títulos : #494F66;
+$Gray_5 : #E4E8F7;
+$Acian_2 : #6F7DFF;
+.suma {
+    width: 400px;
+    display: grid;
+    grid-template-columns: 250px 160px;
+    margin-left: 100px;
+    border-bottom: 1px solid #E4E8F7;
+    padding-bottom: 20px;
+    margin-bottom: 48px;
+}
+.sumaAsegurada{
+    color: $Gray_1_Títulos;
+    font-size: 16px;
+    font-weight: 900;
+}
+.valorSuma{
+display: flex;
+}
+
+.div2{
+    display: flex;
+    height: 40px;
+    border: 1px solid $Gray_5;
+    border-radius: 4px;
+    margin: 20px 0px 20px 0px;
+    justify-content: space-between;
+    align-items: center;
+}
+.min{
+    color: $Gray_2_Paragraph;
+    font-size: 12px;
+    width: 85px;
+    border-right: 1px solid $Gray_5;
+    padding-right: 8px;
+    font-weight: bold;
+}
+.max{
+    color: $Gray_2_Paragraph;
+    font-size: 12px;
+    width: 85px;
+    padding-left: 12px;
+    font-weight: bold;
+}
+.cantidad{
+    color: $Gray_1_Títulos;
+    font-size: 16px;
+    font-weight: bold;
+}
+.button-menos{
+ background-color: #FFFFFF;
+ border: none;
+ color: $Acian_2;
+ width: 50px;
+ height: 35px;
+ outline:none;
+ font-size: 26px;
+}
+.button-mas{
+    background-color: #FFFFFF;
+    border: none;
+    color:$Acian_2;
+    width: 50px;
+    height: 35px;
+    font-size: 26px;    
+}
+.div1{
+    margin-right: 40px;
+}
+  @media screen and (max-width: 767px) {
+    .suma {
+        width: 81vw;
+        justify-items: center;
+        margin-left: 0px;
+        grid-template-columns: 100%;
+        border-bottom: none;
+        padding-bottom: 0px;
+        margin-bottom: 8px;
+    }
+
+    
+.div2{
+    width: 95%;
+    height: 56px;
+    border: 1px solid $Gray_5;
+}
+
+.div1 {
+    padding-left: 8px;
+    justify-self: baseline;
+}
+  
+  }
+  
+  

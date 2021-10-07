@@ -1,0 +1,39 @@
+$White : #FFFFFF;
+$Gray_3 : #A3ABCC;
+$Gray_1_Títulos : #494F66;
+
+.labelTab{ 
+    font-size: 10px ; 
+    width: 90px;
+    font-weight: bold;
+}
+.text-add-remove-coverage{
+    font-size: 20px;
+    color: $Gray_1_Títulos;
+    padding-left: 50px;
+    font-weight: bold;
+    padding-bottom: 30px;
+    padding-top: 20px;
+}
+.box{
+    width: 400px;
+    margin-left: 50px;
+}
+.tabs{
+    border-bottom: 1; 
+    border-color: 'divider';
+    margin-left: 50px;
+}
+@media screen and (max-width: 767px) {
+
+    .box{
+        width: 100vw;
+        margin-left: 0px;
+
+    }
+    .tabs{
+        margin-left: 0px;
+    }
+    
+}
+

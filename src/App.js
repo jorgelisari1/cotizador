@@ -1,28 +1,29 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import { ThemeProvider, createMuiTheme } from '@material-ui/core/styles';
+import { createTheme, ThemeProvider } from '@mui/material/styles';
 
 import { Login } from './Views/Login';
+import { Continuar } from './Views/Continuar';
 
-const theme = createMuiTheme({
+const theme = createTheme({
   palette: {
-    primary: {
-      main: '#E69526',
-    },
+    secondary: {
+        main: '#EF3340'
+    }
   },
 });
 
 const App = () => {
   return (
-      <Router>
-        <Switch>
-          <Route path="/">
-            <ThemeProvider theme={theme}>
-              <Login />
-            </ThemeProvider>
-          </Route>
-        </Switch>
-      </Router>
+    <ThemeProvider theme={theme}>
+    <Router>
+       <Switch>
+      <Route exact path="/" component={Login} />
+      <Route path="/continuar" component={Continuar} />
+    </Switch>
+    </Router>
+  </ThemeProvider>
+   
   );
 };
 

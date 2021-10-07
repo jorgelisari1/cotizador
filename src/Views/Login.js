@@ -6,7 +6,7 @@ import { useHistory } from 'react-router-dom';
 import logo from '../assets/img/logo.png';
 import phone from '../assets/img/phone.png';
 import { SectionMessage } from '../Components/Login/SectionMessage';
-import '../style/index.scss';
+import '../styles/index.scss';
 import { withStyles } from '@material-ui/styles';
 
 const GreenCheckbox = withStyles({
@@ -78,6 +78,7 @@ const CssTextField2 = withStyles({
 
 export const Login = () => {
     const history = useHistory();
+
     const [placa, setPlaca] = useState('');
     const [doc, setDoc] = useState('');
     const [celular, setCelular] = useState('');
@@ -103,7 +104,10 @@ export const Login = () => {
             if (/\d{9,}/.test(celular)) {
                 if (/^([A-Za-z]{3}\d{3})$/.test(placa)) {
                     setError(false);
-                    history.push(`home/`);
+                   console.log('dentrp')
+                        history.push(`/home`);
+                   
+                    
                 } else {
                     setError(true);
                     setLabelInput("El número de  Placa es invalido.")
@@ -125,12 +129,12 @@ export const Login = () => {
                     <div>
                         <img className="logo" src={logo} alt="logo" />
                     </div>
-                    <div class="imagenPhone" > <img className="phone" src={phone} alt="phone" /> <p className="Roboto mobile-login">Llámanos</p> </div>
+                    <div className="imagenPhone" > <img className="phone2" src={phone} alt="phone" /> <p className="Roboto mobile-login">Llámanos</p> </div>
                 </div>
                 <SectionMessage />
             </article>
             <article className="div-login" id="login" >
-                <div class="phoneDesktop" >
+                <div className="phoneDesktop" >
                     <p className="Roboto">¿Tienes alguna duda?</p>
                     <img className="phone" src={phone} alt="phone" />
                     <p className="Roboto fontPhone" >(01) 411 6001</p>
@@ -174,13 +178,13 @@ export const Login = () => {
                             onChange={(e) => setPlaca((e.target.value).replace(/ /g, ""))}
                         />
                     </div>
-                    <div class="div-terms">
+                    <div className="div-terms">
                         <GreenCheckbox checked={checked} onChange={handleCheck} name="checkedG" />
                         <p className="terms">Acepto la  <span className="span"> política de Protección de Datos Personales</span> y los  <span className="span">Términos y Condiciones.</span></p>
                     </div>
                     <button className="btn-login"
                         type="button"
-                        onClick={Cotizar} >
+                        onClick={(e)=> Cotizar(e)} >
                         COTÍZALO </button>
                 </div>
             </article>
