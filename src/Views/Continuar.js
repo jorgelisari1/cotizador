@@ -1,4 +1,5 @@
 import React from 'react';
+import { useHistory } from 'react-router-dom';
 import ArrowBackIos from '@mui/icons-material/ArrowBackIos';
 import CheckIcon from '@mui/icons-material/Check';
 import { Header } from '../Components/Header';
@@ -10,6 +11,18 @@ import { TabsCoberturas } from '../Components/Continuar/TabsCoberturas';
 import '../styles/continuar.scss';
 
 export const Continuar = (props) => {
+   const history = useHistory();
+
+const volver = (e) => {
+ e.preventDefault();
+history.push('/cotizador')
+}
+
+const continuar = (e) => {
+ e.preventDefault();
+history.replace('/cotizador/gracias')
+}
+
   return (
     <div className="home">
       <Header />
@@ -21,7 +34,7 @@ export const Continuar = (props) => {
             <div className="saludo">
               <div className="icon-back-father">
                 <div className="icon-back1">
-                  <ArrowBackIos style={{ fontSize: '13px', fontWeight: '100', paddingLeft: '3px' }}></ArrowBackIos>
+                  <ArrowBackIos style={{ fontSize: '13px', fontWeight: '100', paddingLeft: '3px' }} onClick={(e) =>volver(e) }></ArrowBackIos>
                 </div>
                 <p className="text-volver"> VOLVER</p>
               </div>
@@ -49,7 +62,7 @@ export const Continuar = (props) => {
               </div> 
               <div className="text-suma-total-m">MENSUAL</div>
             </div>
-            <button className="button-continuar">LO QUIERO </button>
+            <button className="button-continuar" onClick={(e) => continuar(e)}>LO QUIERO </button>
           </div>
         </div>
       </div>

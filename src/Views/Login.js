@@ -88,15 +88,12 @@ export const Login = () => {
     const [labelInput, setLabelInput] = useState("");
     const [labelDoc, setLabelDoc] = useState("");
     const [labelCelular, setLabelCelular] = useState("");
-    const [id, setId] = useState('DNI');
     const [checked, setChecked] = useState(true);
 
     const handleCheck = (event) => {
         setChecked(event.target.checked);
     };
-    const handleChange = (event) => {
-        setId(event.target.value);
-    };
+    
 
     const Cotizar = (e) => {
         e.preventDefault();
@@ -105,7 +102,7 @@ export const Login = () => {
                 if (/^([A-Za-z]{3}\d{3})$/.test(placa)) {
                     setError(false);
                    console.log('dentrp')
-                        history.push(`/home`);
+                        history.push(`cotizador/continuar`);
                    
                     
                 } else {

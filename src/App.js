@@ -4,6 +4,7 @@ import { createTheme, ThemeProvider } from '@mui/material/styles';
 
 import { Login } from './Views/Login';
 import { Continuar } from './Views/Continuar';
+import { Gracias } from './Views/Gracias';
 
 const theme = createTheme({
   palette: {
@@ -18,8 +19,9 @@ const App = () => {
     <ThemeProvider theme={theme}>
     <Router>
        <Switch>
-      <Route exact path="/" component={Login} />
-      <Route path="/continuar" component={Continuar} />
+      <Route exact path="/cotizador" component={Login} />
+      <Route path="/cotizador/continuar" component={Continuar} />
+      <Route path="/cotizador/gracias" component={Gracias} />
     </Switch>
     </Router>
   </ThemeProvider>
