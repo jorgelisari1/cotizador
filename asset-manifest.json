@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/cotizador/static/css/main.e5598549.chunk.css",
+    "main.js": "/cotizador/static/js/main.c14f2cbd.chunk.js",
+    "main.js.map": "/cotizador/static/js/main.c14f2cbd.chunk.js.map",
+    "runtime-main.js": "/cotizador/static/js/runtime-main.0c689d50.js",
+    "runtime-main.js.map": "/cotizador/static/js/runtime-main.0c689d50.js.map",
+    "static/js/2.15e4bb16.chunk.js": "/cotizador/static/js/2.15e4bb16.chunk.js",
+    "static/js/2.15e4bb16.chunk.js.map": "/cotizador/static/js/2.15e4bb16.chunk.js.map",
+    "static/js/3.becc50da.chunk.js": "/cotizador/static/js/3.becc50da.chunk.js",
+    "static/js/3.becc50da.chunk.js.map": "/cotizador/static/js/3.becc50da.chunk.js.map",
+    "index.html": "/cotizador/index.html",
+    "static/css/main.e5598549.chunk.css.map": "/cotizador/static/css/main.e5598549.chunk.css.map",
+    "static/js/2.15e4bb16.chunk.js.LICENSE.txt": "/cotizador/static/js/2.15e4bb16.chunk.js.LICENSE.txt",
+    "static/media/index.scss": "/cotizador/static/media/fondoDesktop.d6522efb.jpg",
+    "static/media/girl-desktop.bd0d93d7.png": "/cotizador/static/media/girl-desktop.bd0d93d7.png",
+    "static/media/man-happy.cfc738f5.png": "/cotizador/static/media/man-happy.cfc738f5.png",
+    "static/media/mobile-girl.470f66bf.png": "/cotizador/static/media/mobile-girl.470f66bf.png",
+    "static/media/mobile-man-happy.757ca6c8.png": "/cotizador/static/media/mobile-man-happy.757ca6c8.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.0c689d50.js",
+    "static/js/2.15e4bb16.chunk.js",
+    "static/css/main.e5598549.chunk.css",
+    "static/js/main.c14f2cbd.chunk.js"
+  ]
+}
