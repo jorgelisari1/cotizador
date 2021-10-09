@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import '../styles/suma.scss';
 
-export const Suma = ({count, setCount}) => {
+export const Suma = ({ count, setCount }) => {
 
   return (
     <div className="suma">
@@ -39,5 +39,5 @@ export const Suma = ({count, setCount}) => {
 
 Suma.propTypes = {
   count: PropTypes.number,
-  setCount :  PropTypes.func
+  setCount: PropTypes.func
 };

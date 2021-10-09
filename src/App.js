@@ -9,7 +9,7 @@ import { Gracias } from './Views/Gracias';
 const theme = createTheme({
   palette: {
     secondary: {
-        main: '#EF3340'
+      main: '#EF3340'
     }
   },
 });
@@ -17,15 +17,15 @@ const theme = createTheme({
 const App = () => {
   return (
     <ThemeProvider theme={theme}>
-    <Router>
-       <Switch>
-      <Route exact path="/cotizador" component={Login} />
-      <Route path="/cotizador/continuar" component={Continuar} />
-      <Route path="/cotizador/gracias/" component={Gracias} />
-    </Switch>
-    </Router>
-  </ThemeProvider>
-   
+      <Router basename={process.env.PUBLIC_URL}>
+        <Switch>
+          <Route exact path="/cotizador" component={Login} />
+          <Route path="/cotizador/continuar" component={Continuar} />
+          <Route path="/cotizador/gracias/" component={Gracias} />
+        </Switch>
+      </Router>
+    </ThemeProvider>
+
   );
 };
 

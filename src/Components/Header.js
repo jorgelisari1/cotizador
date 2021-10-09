@@ -11,7 +11,7 @@ export const Header = () =>
             <div className="Roboto text-duda">¿Tienes alguna duda?</div>
             <img className="phone" src={phone} alt="phone" />
             <div className="Roboto mobile-login">Llámanos</div>
-            <div className="Roboto mobile-login2">(01) 411 6001</div> 
+            <div className="Roboto mobile-login2">(01) 411 6001</div>
         </div>
     </div>
     ;

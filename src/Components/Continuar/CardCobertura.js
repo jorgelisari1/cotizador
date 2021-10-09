@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import React, {useEffect} from 'react';
+import React, { useEffect } from 'react';
 import { styled } from "@mui/material/styles";
 import FormControlLabel from "@mui/material/FormControlLabel";
 import Switch from "@mui/material/Switch";
@@ -63,42 +63,42 @@ export const CardCobertura = (props) => {
     console.log(props.check, 'hchehhe')
     const [valor, setValor] = React.useState(props.check);
     const [open, setOpen] = React.useState(false);
-    const change = () =>{
+    const change = () => {
         setValor(!valor)
-        if( props.name === 'Choque y/o pasarte la luz roja'){
-            if(!valor){
-                props.setMonto(props.monto+20);
-            }else{
-                props.setMonto(props.monto-20);
-            }   
-          
-         }
-        if( props.name === 'Llanta robada'){
-            if(!valor){
-                props.setMonto(props.monto+15);
-            }else{
-                props.setMonto(props.monto-15);
-            }   
-          
-         }
-         if(props.name === 'Atropello en la vía evitamiento'){
-            if(!valor){
-                props.setMonto(props.monto+50);
-            }else{
-                props.setMonto(props.monto-50);
-            }  
-         }
-        };
-   
-    useEffect(() => {
-        if(props.count > 16000 && props.name === 'Choque y/o pasarte la luz roja' && valor){
-            setValor(false);
-            props.setMonto(props.monto-20);
-         }
-         
-      }, [props.count]);
+        if (props.name === 'Choque y/o pasarte la luz roja') {
+            if (!valor) {
+                props.setMonto(props.monto + 20);
+            } else {
+                props.setMonto(props.monto - 20);
+            }
 
-    
+        }
+        if (props.name === 'Llanta robada') {
+            if (!valor) {
+                props.setMonto(props.monto + 15);
+            } else {
+                props.setMonto(props.monto - 15);
+            }
+
+        }
+        if (props.name === 'Atropello en la vía evitamiento') {
+            if (!valor) {
+                props.setMonto(props.monto + 50);
+            } else {
+                props.setMonto(props.monto - 50);
+            }
+        }
+    };
+
+    useEffect(() => {
+        if (props.count > 16000 && props.name === 'Choque y/o pasarte la luz roja' && valor) {
+            setValor(false);
+            props.setMonto(props.monto - 20);
+        }
+
+    }, [props.count]);
+
+
     return (<React.Fragment>
         <div className="cardCovertura">
             <img src={props.img} alt={props.name} />
@@ -107,7 +107,7 @@ export const CardCobertura = (props) => {
                 <FormControlLabel
                     control={<IOSSwitch sx={{ m: 1 }} />}
                     label=""
-                    onChange={() => {change()}}
+                    onChange={() => { change() }}
                     checked={valor}
                 />
             </div>
@@ -125,8 +125,6 @@ export const CardCobertura = (props) => {
                         </div>
                     </div>
             }
-
-
         </div>
     </React.Fragment>);
 }

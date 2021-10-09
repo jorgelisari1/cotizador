@@ -1,5 +1,5 @@
-import React, {useState} from 'react';
-import { useHistory, useLocation} from 'react-router-dom';
+import React, { useState } from 'react';
+import { useHistory, useLocation } from 'react-router-dom';
 import ArrowBackIos from '@mui/icons-material/ArrowBackIos';
 import CheckIcon from '@mui/icons-material/Check';
 import { Header } from '../Components/Header';
@@ -26,7 +26,7 @@ export const Continuar = () => {
     history.replace({
       pathname: `/cotizador/gracias`,
       state: { monto: monto }
-  });
+    });
   }
 
   return (
@@ -48,10 +48,10 @@ export const Continuar = () => {
                 <p className="text_saludo"> Mira las coberturas </p>
                 <p className="text_saludo2"> Conoce las coberturas para tu plan</p>
               </div>
-              <Card2  placa={placa}/>
+              <Card2 placa={placa} />
             </div>
             <Suma count={count} setCount={setCount} />
-            <TabsCoberturas count={count}  monto={monto} setMonto={setMonto} />
+            <TabsCoberturas count={count} monto={monto} setMonto={setMonto} />
           </div>
 
           <div className="continuar">

@@ -2,8 +2,6 @@ import React from 'react';
 import ArrowBackIos from '@mui/icons-material/ArrowBackIos'
 import '../../styles/progress.scss';
 
-
-
 export const Step2 = () => {
 
     return (
@@ -22,10 +20,9 @@ export const Step2 = () => {
                 </div>
                 <div className="horizontal">
                     <div className="circulo">2</div>
-                    <div className ="datos">Arma tu plan</div>
+                    <div className="datos">Arma tu plan</div>
                 </div>
             </div>
-
         </div>
     );
 };
