@@ -16,9 +16,9 @@ _Estas instrucciones te permitirán obtener una copia del proyecto en funcionami
 
 ### Instalación 🔧
 
-1.git clone --branch master https://github.com/jorgelisari1/cotizador.git
-2.git branch -a (para verificar en que rama te encuentras)
-3.git checkout master (el proyecto esta utilizando la rama gh-pages por defecto debido a las especificaciones del despliegue)
+1. git clone --branch master https://github.com/jorgelisari1/cotizador.git
+2. git branch -a (para verificar en que rama te encuentras)
+3. git checkout master (el proyecto esta utilizando la rama gh-pages por defecto debido a las especificaciones del despliegue)
 4. npm install 
 5. npm start (y disfruta del proyecto)
 
