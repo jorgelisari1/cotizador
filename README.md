@@ -20,7 +20,7 @@ _Estas instrucciones te permitirán obtener una copia del proyecto en funcionami
 1. git clone --branch master https://github.com/jorgelisari1/cotizador.git (el proyecto esta utilizando la rama gh-pages por defecto debido a las especificaciones del despliegue, necesitas moverte a la rama **master** porque desde allí se instalan nuestras dependencias ).
 2. cd cotizador (para entrar en el directorio del proyecto).
 3. npm install
-4. El comando saldrá con un código de salida 0 si no se encontraron vulnerabilidades. 
+4. npm audit fix (El comando saldrá con un código de salida 0 si no se encontraron vulnerabilidades.)
 5. npm start (y disfruta del proyecto)
 
 
