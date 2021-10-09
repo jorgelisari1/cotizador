@@ -3,12 +3,13 @@
 Seguro Vehicular
 **Cotiza tu seguro y aprovecha estos beneficios:**
 
-Facilidades de pago
-Auto de reemplazo
-Auxilio mecánico
-Descuento en gasolina
-Chofer de reemplazo
+- Facilidades de pago
+- Auto de reemplazo
+- Auxilio mecánico
+- Descuento en gasolina
+- Chofer de reemplazo
 
+![](https://www.rimac.com/content/dam/rimac/publica/pdp-vehicular/personaje.svg)
 ## Comenzando 🚀
 
 _Estas instrucciones te permitirán obtener una copia del proyecto en funcionamiento en tu máquina local para propósitos de desarrollo y pruebas._
@@ -16,10 +17,10 @@ _Estas instrucciones te permitirán obtener una copia del proyecto en funcionami
 
 ### Instalación 🔧
 
-1. git clone --branch master https://github.com/jorgelisari1/cotizador.git
-2. git branch -a (para verificar en que rama te encuentras)
-3. git checkout master (el proyecto esta utilizando la rama gh-pages por defecto debido a las especificaciones del despliegue)
-4. npm install 
+1. git clone --branch master https://github.com/jorgelisari1/cotizador.git (el proyecto esta utilizando la rama gh-pages por defecto debido a las especificaciones del despliegue, necesitas moverte a la rama **master** porque desde allí se instalan nuestras dependencias ).
+2. cd cotizador (para entrar en el directorio del proyecto).
+3. npm install
+4. El comando saldrá con un código de salida 0 si no se encontraron vulnerabilidades. 
 5. npm start (y disfruta del proyecto)
 
 
@@ -34,9 +35,11 @@ Y no decidí usar Ts, debido a que me demoraría mas tiempo y mi estilo para rea
 ## Construido con 🛠️
 
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - El framework web usado
-* [Maven](https://maven.apache.org/) - Manejador de dependencias
-* [ROME](https://rometools.github.io/rome/) - Usado para generar RSS
+* [Sass](https://sass-lang.com/) - Preprocesador de css
+* [React Router Dom](https://reactrouter.com/web/guides/quick-start) - Manejador de la navegación
+* [Eslint](https://eslint.org/) - Nos permie detectar errores de Js.
+* [Material UI](https://mui.com/) - Una biblioteca robusta, personalizable y accesible de componentes básicos y avanzados, lo que le permite crear su propio sistema de diseño y desarrollar aplicaciones React más rápido.
+* [Gh-pages](https://pages.github.com/) - GitHub Pages es un servicio de GitHub que nos permite alojar nuestros proyectos y mostrarlos en vivo en una página web estática sin necesidad de pagar por hosting o siquiera tener conocimientos en servidores o DevOps.
 
 
 
@@ -52,7 +55,7 @@ Y no decidí usar Ts, debido a que me demoraría mas tiempo y mi estilo para rea
 
 ## Expresiones de Gratitud 🎁
 
-* Gracias por tomarme encuenta  🤓.
+* Gracias por tomarme encuenta, espero que a pesar de lo complicado que fue para mi crear el proyecto estando en 2 empleos para la fecha en la que me tocó el reto, logren ver mi potencial y estoy muy segura que la calidad del código que yo puedo lograr es mucho mas grande de la que verán aquí 🤓.
 
 
 
