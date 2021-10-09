@@ -6,7 +6,7 @@ import { useHistory } from 'react-router-dom';
 import logo from '../assets/img/logo.png';
 import phone from '../assets/img/phone.png';
 import { SectionMessage } from '../Components/Login/SectionMessage';
-import { getInfo } from '../Controllers'
+import { getInfo } from '../controller'
 import '../styles/index.scss';
 import { withStyles } from '@material-ui/styles';
 
