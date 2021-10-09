@@ -39,7 +39,9 @@ $Gray_5 : #E4E8F7;;
     font-family: 'Lato';
     font-weight: bold;
 }
-
+.btn-gracias:hover {
+	opacity: 0.6;
+}
 .text-red{
     color: $Red_1_Rimac;
     font-weight: bold;

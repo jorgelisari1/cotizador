@@ -2,6 +2,7 @@ $Gray_2_Paragraph : #676F8F;
 $Gray_1_Títulos : #494F66;
 $Gray_5 : #E4E8F7;
 $Acian_2 : #6F7DFF;
+$Gray_7 : #F7F8FC;
 .suma {
     width: 400px;
     display: grid;
@@ -57,14 +58,25 @@ display: flex;
  height: 35px;
  outline:none;
  font-size: 26px;
+ cursor: pointer;
 }
+
 .button-mas{
     background-color: #FFFFFF;
     border: none;
     color:$Acian_2;
     width: 50px;
     height: 35px;
-    font-size: 26px;    
+    font-size: 26px; 
+    cursor: pointer;   
+}
+.button-mas:hover{
+    background-color: $Gray_7;
+   
+}
+.button-menos:hover{
+    background-color: $Gray_7;
+   
 }
 .div1{
     margin-right: 40px;

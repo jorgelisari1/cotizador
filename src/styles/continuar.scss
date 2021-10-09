@@ -73,6 +73,7 @@ $Red_1_Rimac: #EF3340;
 	display: grid;
 	justify-items: center;
 	align-content: center;
+    cursor: pointer;
 }
 
 .icon-back-father {
@@ -85,6 +86,10 @@ $Red_1_Rimac: #EF3340;
 .text-volver {
 	color: #A3ABCC;
 	font-size: 12px;
+}
+
+.icon-back1:hover{
+    opacity: (0.2);
 }
 
 .button-continuar {
@@ -139,7 +144,9 @@ $Red_1_Rimac: #EF3340;
 
 .check-icon-color {
 	color: $Green_2;
-	transform: scale(.5);
+	transform: scale(1.1);
+    padding-top: 10px;
+    padding-right: 8px;
 }
 
 .text-incluye2 {
@@ -149,7 +156,9 @@ $Red_1_Rimac: #EF3340;
 	font-size: 14px;
 	margin-top: 3px;
 }
-
+.button-continuar:hover {
+	opacity: 0.6;
+}
 @media screen and (max-width: 1024px) {
 	.mobile-center {
 		grid-template-columns: 100%;

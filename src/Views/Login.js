@@ -30,7 +30,6 @@ const CssTextField = withStyles({
             color: '#A3ABCC',
             fontFamily: 'Lato'
         },
-
         '& .MuiOutlinedInput-root': {
             '& fieldset': {
                 border: '1px solid #C5CBE0',
@@ -44,7 +43,6 @@ const CssTextField = withStyles({
             },
         },
     },
-
 })(TextField);
 
 const CssTextField2 = withStyles({
@@ -71,15 +69,12 @@ const CssTextField2 = withStyles({
             '&.Mui-focused fieldset': {
                 borderColor: '#A3ABCC',
             },
-
         },
     },
 })(TextField);
 
-
 export const Login = () => {
     const history = useHistory();
-
     const [placa, setPlaca] = useState('');
     const [doc, setDoc] = useState('');
     const [celular, setCelular] = useState('');
@@ -100,29 +95,24 @@ export const Login = () => {
         let mounted = true;
         getInfo('Luis', placa)
             .then((info) => {
-                if (mounted) {
-                    setUserState(info)
-                }
+                if (mounted) {setUserState(info)}
             })
             .catch((e) => console.error(e))
         return function cleanup() {
             mounted = false;
         };
-
     }, [placa]);
 
     const Cotizar = (e) => {
         e.preventDefault();
         if (/^[0-9]{8,}$/.test(doc) && doc !== "") {
             if (/\d{9,}/.test(celular)) {
-                if (/^([A-Za-z]{0,3}\d{3})$/.test(placa)) {
+                if (/^([A-Za-z]{2,3}-{0,1}\d{3})$/.test(placa)) {
                     setError(false);
                     history.replace({
                         pathname: `cotizador/continuar/`,
                         state: { placa: user.body }
                     });
-
-
                 } else {
                     setError(true);
                     setLabelInput("El número de  Placa es invalido.")
@@ -197,12 +187,7 @@ export const Login = () => {
                         <GreenCheckbox checked={checked} onChange={handleCheck} name="checkedG" />
                         <p className="terms">Acepto la  <span className="span"> política de Protección de Datos Personales</span> y los  <span className="span">Términos y Condiciones.</span></p>
                     </div>
-                    <button className="btn-login"
-                        type="button"
-                        onClick={(e) => Cotizar(e)} >
-                        COTÍZALO </button>
+                    <button className="btn-login" type="button" onClick={(e) => Cotizar(e)} > COTÍZALO </button>
                 </div>
             </article>
-        </section>
-    )
-};
+        </section>)};

@@ -8,7 +8,7 @@ export const Card2 = ({ placa }) => {
   return (
     <div className="card">
       <div className="textCard">
-        <div className="text-placa">Placa: {placa}</div>
+        <div className="text-placa">Placa: {placa.toUpperCase()}</div>
         <div className="text-car">Wolkswagen 2019</div>
         <div className="text-car">Golf</div >
       </div>

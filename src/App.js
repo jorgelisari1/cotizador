@@ -17,7 +17,7 @@ const theme = createTheme({
 const App = () => {
   return (
     <ThemeProvider theme={theme}>
-      <Router basename={process.env.PUBLIC_URL}>
+      <Router >
         <Switch>
           <Route exact path="/cotizador" component={Login} />
           <Route path="/cotizador/continuar" component={Continuar} />

@@ -102,10 +102,10 @@ export const TabsCoberturas = ({ count, monto, setMonto }) => {
         }
       </TabPanel>
       <TabPanel value={value} index={1} dir={theme.direction} className="tabs">
-        Item Two
+      PROTEGE A LOS QUE TE RODEAN...
       </TabPanel>
       <TabPanel value={value} index={2} dir={theme.direction} className="tabs">
-        Item Three
+      MEJORA TU PLAN...
       </TabPanel>
     </Box>
   );
