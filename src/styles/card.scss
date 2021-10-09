@@ -89,16 +89,24 @@ $Gray_2_Paragraph : #676F8F;
   font-weight: normal;
  
 }
+.quitarSwitch{
+  display: none;
+}
 @media screen and (max-width: 767px) {
-
+  .quitarSwitch{
+    display: block;
+  }
   .card{
     background-color: $White;
     border-radius: 12px;
     display: grid;
-    width: 300px;
     grid-template-columns: 60% 40%;
     padding: 0px 20px 0px 20px;
     height: 150px;
+    margin-top: 0px;
+    margin-left: 0px;
+    border: none;
+    width: 92%;
   }
   .imgeBoy{
       justify-self: end;

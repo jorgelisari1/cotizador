@@ -1,11 +1,8 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import '../styles/suma.scss';
 
-
-
-export const Suma = () => {
-
-  const [count, setCount] = React.useState(14300);
+export const Suma = ({count, setCount}) => {
 
   return (
     <div className="suma">
@@ -20,8 +17,8 @@ export const Suma = () => {
         <button
           className="button-menos"
           onClick={() => {
-            if (count >= 12500) {
-              setCount(Math.max(count + 100, 0));
+            if (count > 12500) {
+              setCount(count - 100);
             }
           }}
         >-</button>
@@ -29,8 +26,8 @@ export const Suma = () => {
         <button
           className="button-mas"
           onClick={() => {
-            if (count <= 16500) {
-              setCount(Math.max(count + 100, 0));
+            if (count < 16500) {
+              setCount(count + 100);
             }
 
           }}
@@ -39,3 +36,8 @@ export const Suma = () => {
     </div>
   );
 }
+
+Suma.propTypes = {
+  count: PropTypes.number,
+  setCount :  PropTypes.func
+};

@@ -3,6 +3,7 @@ $Gray_1_Títulos : #494F66;
 $Gray_2_Paragraph : #676F8F;
 $Gray_7 : #F7F8FC;
 $Green_2 : #43B748;
+$Red_1_Rimac: #EF3340;
 .select-card{
     display: grid;
 }
@@ -65,8 +66,8 @@ $Green_2 : #43B748;
     width: 24px;
     height: 24px;
     border-radius: 50%;
-    border: 1px solid #EF3340;
-    color: #EF3340;
+    border: 1px solid $Red_1_Rimac;
+    color: $Red_1_Rimac;
     margin-right: 15px;
     display: grid;
     justify-items: center;
@@ -89,7 +90,7 @@ $Green_2 : #43B748;
 .button-continuar{
     width: 196px;
     height: 56px;
-    background-color: #EF3340;
+    background-color: $Red_1_Rimac;
     color: #ffffff;
     font-size: 14px;
     font-weight: 500;
@@ -146,6 +147,12 @@ $Green_2 : #43B748;
     font-size: 14px; 
     margin-top: 3px;
 }
+@media screen and (max-width: 1024px) {
+    .mobile-center{
+        grid-template-columns: 100%;
+    }
+}
+
 @media screen and (max-width: 767px) {
     .text-incluye{
         display: none
@@ -167,18 +174,19 @@ $Green_2 : #43B748;
         background-color: $Gray_7;
         display: grid;
         padding-bottom: 40px;
+        padding-left: 0px;
+        justify-content: center;
+        width: 100%;
+    
     }
     .home{
      width: 100vw;
      display: grid;
      
     }
-
     .saludo {
-        padding: 0px;
+        padding: 20px 0px 0px 0px;
     }
-
-
     .text_saludo2{
         font-size: 16px;
     }
@@ -233,6 +241,10 @@ $Green_2 : #43B748;
         display: grid;
         justify-items: center;
         grid-template-columns: 100vw;
+    }
+    .saludo-suma-tabs{
+        display: grid;
+        justify-items: center;
     }
 }
 

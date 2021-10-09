@@ -48,19 +48,22 @@ TabPanel.propTypes = {
 const dataCovertura  = [
   {img: img_theft,
   name:'Llanta robada',
-  desc:'He salido de casa a las cuatro menos cinco para ir a la academia de ingles de mi pueblo (Sant Cugat, al lado de Barcelona) con mi bici, na llego a la academia que está en el centro del pueblo en una plaza medio-grande y dejo donde siempre la bici atada con una pitón a un sitio de esos de poner las bicis'
+  desc:'He salido de casa a las cuatro menos cinco para ir a la academia de ingles de mi pueblo (Sant Cugat, al lado de Barcelona) con mi bici, na llego a la academia que está en el centro del pueblo en una plaza medio-grande y dejo donde siempre la bici atada con una pitón a un sitio de esos de poner las bicis',
+  check: false
   },
   {img: img_damage,
   name:'Choque y/o pasarte la luz roja',
-  desc:''
+  desc:'',
+  check: false
   },
   {img: img_perdidaTotal,
   name:'Atropello en la vía evitamiento',
-  desc:''
+  desc:'',
+  check: false
   },
 ] 
 
-export const TabsCoberturas = () => {
+export const TabsCoberturas = ({count, monto, setMonto}) => {
   const theme = useTheme();
   const [value, setValue] = React.useState(0);
 
@@ -91,7 +94,7 @@ export const TabsCoberturas = () => {
         {
           
           dataCovertura.map((elem)=>{
-            return <CardCobertura img={elem.img} name={elem.name} desc={elem.desc} />
+            return <CardCobertura key={elem.img} img={elem.img} name={elem.name} desc={elem.desc} count={count} check={elem.check} monto={monto} setMonto={setMonto}/>
           })
         }
         </TabPanel>
@@ -105,4 +108,9 @@ export const TabsCoberturas = () => {
   );
 }
 
-
+TabsCoberturas.propTypes =  { 
+                                count: PropTypes.number,
+                                monto: PropTypes.number,
+                                setMonto: PropTypes.func,
+                            };
+LabelTab.propTypes =  { text: PropTypes.string }

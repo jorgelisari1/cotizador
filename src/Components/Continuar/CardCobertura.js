@@ -1,10 +1,12 @@
-import React from 'react';
+/* eslint-disable react/prop-types */
+import React, {useEffect} from 'react';
 import { styled } from "@mui/material/styles";
 import FormControlLabel from "@mui/material/FormControlLabel";
 import Switch from "@mui/material/Switch";
 import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import '../../styles/card.scss';
+
 
 const IOSSwitch = styled((props) => (
     <Switch focusVisibleClassName=".Mui-focusVisible" disableRipple {...props} />
@@ -58,21 +60,55 @@ const IOSSwitch = styled((props) => (
 }));
 
 export const CardCobertura = (props) => {
-    const [valor, setValor] = React.useState(false);
+    console.log(props.check, 'hchehhe')
+    const [valor, setValor] = React.useState(props.check);
     const [open, setOpen] = React.useState(false);
-    const icon = props.img;
-    console.log(icon)
+    const change = () =>{
+        setValor(!valor)
+        if( props.name === 'Choque y/o pasarte la luz roja'){
+            if(!valor){
+                props.setMonto(props.monto+20);
+            }else{
+                props.setMonto(props.monto-20);
+            }   
+          
+         }
+        if( props.name === 'Llanta robada'){
+            if(!valor){
+                props.setMonto(props.monto+15);
+            }else{
+                props.setMonto(props.monto-15);
+            }   
+          
+         }
+         if(props.name === 'Atropello en la vía evitamiento'){
+            if(!valor){
+                props.setMonto(props.monto+50);
+            }else{
+                props.setMonto(props.monto-50);
+            }  
+         }
+        };
+   
+    useEffect(() => {
+        if(props.count > 16000 && props.name === 'Choque y/o pasarte la luz roja' && valor){
+            setValor(false);
+            props.setMonto(props.monto-20);
+         }
+         
+      }, [props.count]);
+
+    
     return (<React.Fragment>
         <div className="cardCovertura">
             <img src={props.img} alt={props.name} />
             <div className="text-name-covertura">{props.name}</div>
-            <div>
+            <div >
                 <FormControlLabel
                     control={<IOSSwitch sx={{ m: 1 }} />}
                     label=""
-                    onChange={() => {
-                        setValor(!valor);
-                    }}
+                    onChange={() => {change()}}
+                    checked={valor}
                 />
             </div>
         </div>

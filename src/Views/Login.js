@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import TextField from '@material-ui/core/TextField';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import Checkbox from '@material-ui/core/Checkbox';
@@ -6,6 +6,7 @@ import { useHistory } from 'react-router-dom';
 import logo from '../assets/img/logo.png';
 import phone from '../assets/img/phone.png';
 import { SectionMessage } from '../Components/Login/SectionMessage';
+import { getInfo } from '../Controllers'
 import '../styles/index.scss';
 import { withStyles } from '@material-ui/styles';
 
@@ -89,11 +90,26 @@ export const Login = () => {
     const [labelDoc, setLabelDoc] = useState("");
     const [labelCelular, setLabelCelular] = useState("");
     const [checked, setChecked] = useState(true);
+    const [user, setUserState] = useState({});
 
     const handleCheck = (event) => {
         setChecked(event.target.checked);
     };
     
+    useEffect(() => {
+        let mounted = true;
+        getInfo('Luis', placa)
+          .then((info) => {
+            if (mounted) {
+                setUserState(info)
+            }
+          })
+          .catch((e) => console.error(e))
+        return function cleanup() {
+          mounted = false;
+        };
+    
+      }, [placa]);
 
     const Cotizar = (e) => {
         e.preventDefault();
@@ -101,9 +117,11 @@ export const Login = () => {
             if (/\d{9,}/.test(celular)) {
                 if (/^([A-Za-z]{3}\d{3})$/.test(placa)) {
                     setError(false);
-                   console.log('dentrp')
-                        history.push(`cotizador/continuar`);
-                   
+                        history.replace({
+                            pathname: `cotizador/continuar/`,
+                            state: { placa: user.body }
+                        });
+                        
                     
                 } else {
                     setError(true);

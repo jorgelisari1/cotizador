@@ -21,7 +21,7 @@ const App = () => {
        <Switch>
       <Route exact path="/cotizador" component={Login} />
       <Route path="/cotizador/continuar" component={Continuar} />
-      <Route path="/cotizador/gracias" component={Gracias} />
+      <Route path="/cotizador/gracias/" component={Gracias} />
     </Switch>
     </Router>
   </ThemeProvider>
